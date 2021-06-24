@@ -46,7 +46,7 @@
     padding: 10px 0;
     transition: 0.45s;
     /*background-color: transparent;*/
-    background-color: #00AE86;
+    background-color: #000;
 }
 .header-part {
     display: flex;
