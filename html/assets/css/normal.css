@@ -48,7 +48,7 @@ body {
 *{
     outline: none;
 }
-a{color: #006AFA;}
+a{color: #FF3761;}
 a,
 a:hover,
 a:focus {
@@ -58,8 +58,8 @@ a:focus {
 }
 button, input, optgroup, select, textarea{
     font-size: 14px;
-    font-family: 'Poppins', sans-serif;
-    color: #002032;
+    font-family: 'Graphit-Regular';
+    color: #3C393A;
     font-weight: normal;
 }
 button:focus,
@@ -99,17 +99,27 @@ hr{
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
-    color: #4F4F4F;
-    font-weight: normal;
+    font-family: 'Lobster Two', cursive;
+    color: #3C393A;
+    font-weight: 700;
 }
 
 h1{
-    font-size: 36px;
+    font-size: 40px;
 }
 h2{
-    font-size: 24px;
+    font-size: 34px;
 }
 h3{
+    font-size: 30px;
+}
+h4{
+    font-size: 24px;
+}
+h5{
+    font-size: 20px;
+}
+h6{
     font-size: 18px;
 }
 /*---------sitemap-------------*/
@@ -215,67 +225,38 @@ select{
 }
 
 .btn-default {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 24px;
     font-weight: 500;
-    padding: 12px 35px;
+    padding: 8px 28px;
     color: #002032;
     display: inline-block;
     border: none;
-    border-radius: 12px;
-    border: 1px solid transparent;
+    border-radius: 5px;
     transition: 0.4s;
     text-align: center;
     text-transform: capitalize;
     position: relative;
     overflow: hidden;
+    min-width: 115px;
+    text-align: center;
+}
+.btn-theme{
+    background-color:#FF3761;
+    color: #fff;
+}
+.btn-default.btn-theme:hover{
+    color: #fff;
 }
 
-.btn-border-line{
-    border: 1px solid #A0A0A0;
-}
 .bg-theme{
-    background-color:#002032;
+    background-color:#FF3761;
 }
-.bg-default-light{
-    background: rgba(0, 106, 250, 0.1);
-    color: #006AFA;
+.bg-gray{
+    background: #F7F9FC;
 }
-.bg-default-light:hover{
-    background: rgba(11, 59, 182, 0.2);
-}
-.bg-blue{
-    background-color: #006AFA;
-    color: #fff;
-}
-.bg-blue:hover{
-    background-color: #0B3BB6;
-    color: #ffffff;
-}
-.bg-blue-disabled{
-    background-color: #8db0fc;
-}
-.bg-blue.bg-blue-disabled:hover{
-    background-color: #8db0fc;
-}
-.bg-green{
-    background-color: #00AE86;
-    color: #ffffff;
-}
-.bg-green:hover{
-    background-color: #088457;
-    color: #ffffff;
-}
-.bg-green-disabled{
-    opacity: 0.4;
-}
-.bg-green.bg-green-disabled:hover{
-    background-color: #00AE86;
-}
-.bg-gradient{
-    background: linear-gradient(267.76deg, #006AFA -7.48%, #00AE86 96.45%);
-    color: #fff;
-}
+
+
 .btn-default .fa-long-arrow-alt-right{
     position: relative;
     top: 2px;

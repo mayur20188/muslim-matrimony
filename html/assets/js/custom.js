@@ -14,10 +14,15 @@ $(document).ready(function() {
 		$('.menu-part').toggleClass('active');
 		$('.menu-overlay-bg').toggleClass('active');
 	});
-});
 
-
-$(document).ready(function() {
+	$(window).on('load', function() {
+		var headerheight = $('.header-wrapper').outerHeight();
+		$('.content-area-container').css({"padding-top": headerheight+'px'});
+	});
+	$(window).on('resize', function() {
+		var headerheight = $('.header-wrapper').outerHeight();
+		$('.content-area-container').css({"padding-top": headerheight+'px'});
+	});
 
 	// --------select2-------
 	$('.customSelect').each(function() {
