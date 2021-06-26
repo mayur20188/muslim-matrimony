@@ -1,15 +1,24 @@
-// --------preloader--------------
-$(window).on('load', function() {
-	setTimeout(function() {
-        $('.preloader').slideUp('slow');
-      	$('.cube-wrapper').fadeOut();
-    }, 1000);
+
+var svgContainer = document.getElementById('svgPreloader');
+var animItem = bodymovin.loadAnimation({
+	wrapper: svgContainer,
+	animType: 'svg',
+	loop: true,
+	path: 'assets/js/preloader.json'
 });
 
-
+// --------preloader--------------
+$(window).on('load', function() {
+	setTimeout(() => {
+		$('.loader-icon').addClass('animate__backOutDown');
+		$('.preloader').fadeOut('slow');
+	}, 1000);
+	headerStuck()
+});
 
 // --------header--------------
 $(document).ready(function() {
+	headerStuck()
 	$('.toggle-btn, .close-menu, .menu-overlay-bg').on('click', function(){
 		$('.menu-part').toggleClass('active');
 		$('.menu-overlay-bg').toggleClass('active');
@@ -72,23 +81,6 @@ $(document).ready(function() {
 		});
 	}
 
-	// --------------add active class-on another-page move----------
-	// Get current path and find target link
-	var path = window.location.pathname.split("/").pop();
-
-	// Account for home page with empty path
-	if ( path == '' ) {
-		path = 'index.html';
-	}
-
-	var target = $('.account-sidebar ul li a[href="'+path+'"]');
-	// Add active class to target2 link
-	target.parent().addClass('active');
-
-	$("#imgInp").on('change',function() {
-		readURL(this);
-	});
-
 	if ($('.c-review-slider').length) {
 		$('.c-review-slider').owlCarousel({
 			loop: false,
@@ -134,14 +126,21 @@ $(document).ready(function() {
 });
 
 function headerStuck(){
+	var headerHeight = jQuery('.header-wrapper');
+	var scroll = jQuery(window).scrollTop();
+	if (scroll >= 50){
+			headerHeight.addClass('header-sticky');
+	}else{
+		headerHeight.removeClass('header-sticky');
+	}
+
 	$(window).scroll(function(){
-		var headerHeight = $('.header');
+		var headerHeight = $('.header-wrapper');
 		var scroll = $(window).scrollTop();
-		if (scroll >= 100)
-		{
-			headerHeight.addClass('is-stuck');
+		if (scroll >= 50){
+			headerHeight.addClass('header-sticky');
 		}else{
-			headerHeight.removeClass('is-stuck');
+			headerHeight.removeClass('header-sticky');
 		}
 	});
 }
@@ -171,18 +170,6 @@ function Swiperslider(){
 	});
 }
 
-// ----------profile-image-update---------
-function readURL(input) {
-	if (input.files && input.files[0]) {
-		var reader = new FileReader();
-		
-		reader.onload = function(e) {
-			$('#imgpreviewPrf').attr('src', e.target.result);
-		}
-		
-		reader.readAsDataURL(input.files[0]); // convert to base64 string
-	}
-}
 
 function equalize(sel){
 	var els = Array.prototype.slice.call(document.querySelectorAll(sel));  

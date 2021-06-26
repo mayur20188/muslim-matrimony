@@ -50,9 +50,15 @@
     align-items: center;
     justify-content: space-between;
 }
-.header-wrapper.sticky {
-    background-color: rgba(255,255,255,0.9);
+.header-wrapper.header-sticky {
+    background-color: #fff;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16);
+}
+.logo-pink, .header-sticky .logo-white{
+    display: none;
+}
+.header-sticky .logo-pink{
+    display: block;
 }
 .inner-page-navbar {
     background-color: #27282c;
@@ -100,6 +106,12 @@
 .account-right li{
     position: relative;
     margin-left: 10px;
+}
+.header-sticky .header-btn{
+    color: #3C393A;
+}
+.header-btn i{
+    display: none;
 }
 
 .menu-part {
@@ -278,6 +290,70 @@
 .mt-btn {
     margin-top: 35px;
 }
+
+.footer-top{
+    background: #3C393A;
+}
+.footer-col{
+    margin-bottom: 50px;
+}
+.footer-logo{
+    margin-bottom: 20px;
+}
+.footer-col-info p{
+    color: #fff;
+}
+.footer-title{
+    font-family: 'Graphit-Medium';
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: normal;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.footer-menu li a{
+    line-height: 20px;
+    display: block;
+    color: #B1B0B0;
+    text-transform: capitalize;
+    padding-left: 15px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.footer-menu li a::before{
+    content: '';
+    position: absolute;
+    left: 1px;
+    top: 8px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #B1B0B0;
+}
+.footer-menu li a:hover{
+    color: #fff;
+}
+.footer-menu li a:hover::before{
+    background-color: #fff;
+}
+.footer-icon li a{
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    margin-right: 20px;
+}
+
+.footer-bottom{
+    background-color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+.footer-copyright p{
+    font-family: 'Graphit-Medium';
+    color: #3C393A;
+    margin-bottom: 0;
+}
 .form-footer-link p {
     color: #4e4e4e;
     font-size: 14px;
@@ -400,7 +476,7 @@
     background-color: rgba(29, 27, 27, 0.5);
 }
 .home-banner{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: flex-end;
 }

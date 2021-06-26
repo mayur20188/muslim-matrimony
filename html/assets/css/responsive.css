@@ -156,6 +156,11 @@
         right: 0;
         transition: all 0.3s;
     }
+    .header-sticky .toggle-btn a:before,
+    .header-sticky .toggle-btn a:after,
+    .header-sticky .toggle-btn a .middle-line{
+        background-color: #3C393A;
+    }
     .toggle-btn a .middle-line:after {
         content: '';
         position: absolute;
@@ -221,6 +226,12 @@
     .home-banner-content p {
         font-size: 16px;
         margin: 0 auto 30px;
+    }
+    .footer-col {
+        margin-bottom: 40px;
+    }
+    .footer-title{
+        margin-bottom: 20px;
     }
 }
 
