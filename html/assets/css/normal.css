@@ -165,16 +165,11 @@ h6{
     align-items: center;
 }
 .loader-icon {
-    max-width: 200px;
+    max-width: 400px;
     margin: auto;
     z-index: 9999;
     display: block;
 }
-.loader-icon svg{
-    width: 200px !important;
-    height: 200px !important;
-}
-
 /*-------default-class---------*/
 
 .p-text-16{ 

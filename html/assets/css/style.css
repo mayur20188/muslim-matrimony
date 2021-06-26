@@ -99,6 +99,14 @@
     color: #fff;
     opacity: 1;
 }
+.header-sticky .nav-bar > ul > li a:hover,
+.header-sticky .nav-bar > ul > li.active a{
+    color: #FF3761;
+    opacity: 1;
+}
+.header-sticky .nav-bar > ul > li a::before{
+    background-color: #FF3761;
+}
 .nav-bar > ul > li a:hover::before,
 .nav-bar > ul > li.active a::before{
     opacity: 1;
@@ -108,7 +116,7 @@
     margin-left: 10px;
 }
 .header-sticky .header-btn{
-    color: #3C393A;
+    color: #fff;
 }
 .header-btn i{
     display: none;

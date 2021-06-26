@@ -186,6 +186,9 @@
         min-width: auto;
         font-size: 20px;
     }
+    .header-sticky .header-btn{
+        color: #3C393A;
+    }
     .header-btn span{
         display: none;
     }
