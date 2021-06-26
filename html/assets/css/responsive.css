@@ -58,6 +58,9 @@
 }
 
 @media (max-width: 1199.98px) {
+    .nav-bar > ul > li{
+        margin: 0 10px;
+    }
     .page-ath-gfx {
         width: 55%;
     }
@@ -67,15 +70,6 @@
 }
 
 @media (max-width: 991.98px) {
-    .page-ath-gfx {
-        width: 50%;
-    }
-    .page-ath-content {
-        width: 50%;
-    }
-}
-
-@media (max-width: 767.98px) {
     .account-right {
         margin-left: auto;
     }
@@ -102,7 +96,7 @@
         top: 0px;
         width: 55px;
         height: 50px;
-        background-color: #ff5252;
+        background-color: #ff3761;
         border-bottom-left-radius: 50px;
         text-align: center;
         padding-left: 15px;
@@ -111,30 +105,81 @@
         font-size: 14px;
     }
     .toggle-btn {
-        width: 2rem;
-        margin-left: 10px;
-    }
-    .toggle-btn a {
+        position: relative;
+        height: 50px;
+        width: 25px;
         display: block;
-        font-size: 22px;
-        color: #fff;
-        text-align: center;
+        margin-left: 15px;
     }
-    .nav-bar li a{
-        padding: 10px 18px;
-        color: #00AE86;
+    .toggle-btn a{
+        display: block;
+    }
+    .toggle-btn a:before {
+        content: '';
+        position: absolute;
+        top: 15px;
+        right: 0;
+        width: 100%;
+        -moz-border-radius: 1px;
+        border-radius: 1px;
+        overflow: hidden;
+        background: #fff;
+        height: 2px;
+        transition: all 0.3s;
+    }
+    .toggle-btn a:after {
+        content: '';
+        position: absolute;
+        top: 31px;
+        right: 0px;
+        width: 60%;
+        -moz-border-radius: 1px;
+        border-radius: 1px;
+        height: 2px;
+        overflow: hidden;
+        background: #fff;
+        -webkit-transition-property: width,background;
+        -moz-transition-property: width,background;
+        transition-property: width,background;
+        -webkit-transition-duration: 0.3s,0.3s;
+        -moz-transition-duration: 0.3s,0.3s;
+        transition-duration: 0.3s,0.3s;
+    }
+    .toggle-btn a .middle-line {
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        top: 23px;
+        -moz-border-radius: 1px;
+        border-radius: 1px;
+        right: 0;
+        transition: all 0.3s;
+    }
+    .toggle-btn a .middle-line:after {
+        content: '';
+        position: absolute;
+        right: -20;
+        top: -25px;
+        padding-left: 28px;
+        height: 50px;
+    }
+
+    .nav-bar > ul > li a {
+        padding: 8px 18px;
+        color: #B0B3B8;
         font-weight: 500;
+        display: inline-block;
     }
-    .nav-bar li{
+    .nav-bar > ul > li{
         margin-left: 0px;
         margin-bottom: 5px;
     }
     .header-btn {
-        width: 36px;
-        height: 36px;
-        text-align: center;
-        padding: 8px;
-        border-radius: 50%;
+        padding: 0;
+        background-color: transparent;
+        min-width: auto;
+        font-size: 20px;
     }
     .header-btn span{
         display: none;
@@ -142,16 +187,22 @@
     .header-btn i{
         display: inline-block;
     }
-    .nav-bar li.active a{
-        background-color: #00AE86;
-        color: #fff;
+    .nav-bar > ul > li a::before{
+        background-color: #ff3761;
     }
-    .menu-part{
-        margin-left: 0px;
-        margin-right: 0px;
+    .nav-bar > ul > li a:hover,
+    .nav-bar > ul > li.active a{
+        color: #ff3761;
     }
+    .page-ath-gfx {
+        width: 50%;
+    }
+    .page-ath-content {
+        width: 50%;
+    }
+}
 
-
+@media (max-width: 767.98px) {
     /*---login----*/
     .page-ath-gfx {
         display: none;
@@ -159,10 +210,17 @@
     .page-ath-content {
         width: 100%;
     }
-
-
     .page-ath-center .page-ath-gfx{
         display: block;
+    }
+
+    .home-banner-content h1 {
+        font-size: 46px;
+        margin-bottom: 30px;
+    }
+    .home-banner-content p {
+        font-size: 16px;
+        margin: 0 auto 30px;
     }
 }
 
@@ -182,15 +240,19 @@
         color: #00ae86;
         padding-top: 11px;
     }
-
-
     .page-footer{
         flex-direction: column;
+    }
+    .app-btn li:not(:last-child) a {
+        margin-right: 10px;
     }
 }
 
 
 @media (max-width: 479.98px) {
+    .logo-part {
+        max-width: 180px;
+    }
 	.page-ath-form{
         padding: 30px 20px;
     }

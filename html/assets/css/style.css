@@ -9,6 +9,7 @@
 @import url('owl.carousel.min.css');
 @import url('jquery.mCustomScrollbar.min.css');
 @import url('select2.css');
+@import url('video-js.css');
 @import url('swiper-slider.css');
 @import url('normal.css');
 
@@ -29,9 +30,6 @@
     visibility: visible;
 }
 
-
-
-
 /*------------Header--------------*/
 .header-wrapper.account-logined{
     background-color: #fff;
@@ -46,7 +44,6 @@
     padding: 10px 0;
     transition: 0.45s;
     /*background-color: transparent;*/
-
 }
 .header-part {
     display: flex;
@@ -91,6 +88,7 @@
     opacity: 0;
     transition: 0.5s;
 }
+.nav-bar > ul > li a:hover,
 .nav-bar > ul > li.active a{
     color: #fff;
     opacity: 1;
@@ -105,8 +103,7 @@
 }
 
 .menu-part {
-    margin-left: 25px;
-    margin-right: 15px;
+    margin-left: 15px;
 }
 .menu-overlay-bg {
     position: fixed;
@@ -404,4 +401,38 @@
 }
 .home-banner{
     height: 100vh;
+    display: flex;
+    align-items: flex-end;
+}
+.home-banner-content{
+    position: relative;
+    max-width: 600px;
+    margin:0 auto 50px;
+    z-index: 2;
+}
+.home-banner-content h1{
+    font-size: 60px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+.home-banner-content p{
+    font-size: 18px;
+    color: #fff;
+    max-width: 350px;
+    margin: 0 auto 50px;
+}
+.app-btn li a{
+    display: block;
+}
+.app-btn li:not(:last-child) a{
+    margin-right: 20px;
+}
+.app-btn li a img {
+    border-radius: 5px;
+    height: 60px;
+}
+.home-banner .video-js{position: absolute;width: 100%;height: 100%; top: 0;left: 0;}
+.home-banner .video-js .vjs-tech {
+    overflow: hidden;
+    object-fit: cover;
 }
