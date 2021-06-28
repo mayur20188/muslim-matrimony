@@ -588,9 +588,115 @@
 .stories-srceen-2{
     margin-left: -25px;
 }
+.how-work-col{
+    background: #FFFFFF;
+    box-shadow: 0px 6px 40px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    padding: 0 40px 40px;
+    text-align: center;
+    height: 100%;
+    transition: 0.4s;
+}
+.how-work-number{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -35px;
+}
+.how-work-number span{
+    color: #FFFFFF;
+    display: block;
+}
+.how-work-num1{
+    background: #FFA429;
+}
+.how-work-num2{
+    background: #18D39E;
+}
+.how-work-num3{
+    background: #40B6FF;
+}
+.how-work-col h5{
+    font-family: 'Graphit-Medium';
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+.how-work-col p{
+    margin-bottom: 30px;
+}
+.how-work-img{
+    max-width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin: auto;
+    padding: 18px;
+    border: 1px solid #E8E9EA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+}
+.how-work-img img{
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.how-work-col:hover .how-work-img img{
+    transform: rotate(-360deg);
+}
 
+.why-us-col li{
+    border: 1px solid #E8E9EA;
+    border-radius: 50px;
+    padding: 8px;
+    color: #3C393A;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.why-us-col li span{
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    background: #FF3761;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 26px;
+    text-align: center;
+    margin-right: 20px;
+    display: block;
+}
 
+.download-app-row{
+    background: #FF3761 url('../images/download_bg.png') no-repeat 0 0 / cover;
+    border-radius: 30px;
+    position: relative;
+    margin: 70px 0px 90px;
+}
+
+.download-app-info{
+    padding: 90px 0;
+}
+.download-app-info h3{
+    font-family: 'Graphit-Medium';
+    font-weight: normal;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.download-app-info p{
+    color: #fff;
+}
+
+.download-app-srceen {
+    position: absolute;
+    top: -100px;
+    height: 570px;
+    right: 0;
+}
 
 
 

@@ -446,6 +446,15 @@ select{
     color: #0E8368;
 }
 
+.section-title{
+    margin-bottom: 50px;
+}
+.section-title h3{
+    
+}
+.section-title > p{
+
+}
 
 .section-ptb40{
     padding-top: 40px;
