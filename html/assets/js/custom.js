@@ -12,8 +12,16 @@ $(window).on('load', function() {
 	setTimeout(() => {
 		$('.loader-icon').addClass('animate__backOutDown');
 		$('.preloader').fadeOut('slow');
+		var wow = new WOW({
+			boxClass: 'wow',
+			animateClass: 'animate__animated',
+			offset: 0,
+			mobile: true,
+			live: true
+		});
+		wow.init();
 	}, 1000);
-	headerStuck()
+	headerStuck();
 });
 
 // --------header--------------
