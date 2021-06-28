@@ -20,7 +20,7 @@
         <link rel="mask-icon" href="assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
-        <link rel="stylesheet" href="assets/css/slick.css"/>
+        <!-- <link rel="stylesheet" href="assets/css/slick.css"/> -->
         <link rel="stylesheet" href="assets/css/style.css" media="all">
         <link rel="stylesheet" href="assets/css/custom.css" media="all">
         <link rel="stylesheet" href="assets/css/responsive.css" media="all">
@@ -554,52 +554,7 @@
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/custom.js"></script>
     <script type="text/javascript">
-        $('#testimonial-slider').slick({
-            infinite: true,
-            speed: 500,
-            fade: true,
-            arrows: false,
-            asNavFor: '#testi-thumb-slider'
-        });
-        $('#testi-thumb-slider').slick({
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            infinite: true,
-            arrows: true,
-            prevArrow: '<div class="slick-prev slick-thumb-prev"><img src="assets/images/up_arrow.png"></div>',
-            nextArrow: '<div class="slick-next slick-thumb-next"><img src="assets/images/down_arrow.png"></div>',
-            asNavFor: '#testimonial-slider',
-            vertical: true,
-            verticalSwiping: true,
-            focusOnSelect: true,
-            responsive: [
-                {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 3,
-                        infinite: true,
-                    }
-                },
-                {
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow: 3,
-                        vertical: false,
-                        verticalSwiping: false,
-                        centerMode: true,
-                    }
-                },
-                {
-                    breakpoint: 576,
-                    settings: {
-                        slidesToShow: 1,
-                        vertical: false,
-                        verticalSwiping: false,
-                        centerMode: true,
-                    }
-                }
-            ]
-        });
+        
         
     </script>
 </body>

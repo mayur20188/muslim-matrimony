@@ -41,53 +41,52 @@ $(document).ready(function() {
 		$('.content-area-container').css({"padding-top": headerheight+'px'});
 	});
 
-	// --------select2-------
-	$('.customSelect').each(function() {
-		var dropdownParents = $(this).parents('.select2Part')
-		$(this).select2({
-			dropdownParent: dropdownParents,
-			minimumResultsForSearch: -1
-		});
+	$('#testimonial-slider').slick({
+		infinite: true,
+		speed: 500,
+		fade: true,
+		arrows: false,
+		asNavFor: '#testi-thumb-slider'
 	});
-	$('.customSelectSearch').each(function() {
-		var dropdownParents = $(this).parents('.select2Part');
-		$(this).select2({
-			dropdownParent: dropdownParents,
-		});
-		$('.customSelectSearch').select2().on('select2:open', function(e){
-			$('.select2-search__field').attr('placeholder', 'Search Item');
-		})
-	});
-	$('.customSelectSearchmultiple').each(function() {
-		var dropdownParents = $(this).parents('.select2Part');
-		var placehldrget = $(this).attr("data-placeholder");
-		$(this).select2({
-			dropdownParent: dropdownParents,
-			placeholder: placehldrget,
-		});
-	});
-
-	// --------mCustomScrollbar-------
-	if ($('.scrollbar-custom').length) {
-		$(".scrollbar-custom").mCustomScrollbar({
-			theme:"minimal-dark",
-			mouseWheelPixels: 300,
-			scrollInertia: 300
-		});
-		//$(".chat-scrollbar").mCustomScrollbar("scrollTo", "bottom");
-	}
-
-	// --------date-picker-------
-	if ($('#postdate').length) {
-		$('#postdate').datepicker({
-			format: "dd-mm-yyyy",
-			orientation: "bottom right",
-			templates :{
-				leftArrow: '<i class="fa fa-chevron-left"></i>',
-				rightArrow: '<i class="fa fa-chevron-right"></i>'
+	$('#testi-thumb-slider').slick({
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		infinite: true,
+		arrows: true,
+		prevArrow: '<div class="slick-prev slick-thumb-prev"><img src="assets/images/up_arrow.png"></div>',
+		nextArrow: '<div class="slick-next slick-thumb-next"><img src="assets/images/down_arrow.png"></div>',
+		asNavFor: '#testimonial-slider',
+		vertical: true,
+		verticalSwiping: true,
+		focusOnSelect: true,
+		responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 3,
+					infinite: true,
+				}
+			},
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 3,
+					vertical: false,
+					verticalSwiping: false,
+					centerMode: true,
+				}
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
+					vertical: false,
+					verticalSwiping: false,
+					centerMode: true,
+				}
 			}
-		});
-	}
+		]
+	});
 
 	if ($('.c-review-slider').length) {
 		$('.c-review-slider').owlCarousel({

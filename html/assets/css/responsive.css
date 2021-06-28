@@ -222,6 +222,38 @@
     .app-btn li a img{
         height: 50px;
     }
+    .testi-flex-slider{
+		flex-direction: column;
+		align-items: center;
+	}
+	.testi-main-slide-box{
+		width: 100%;
+	}
+	.testi-thumb-slide-box{
+		width: 100%;
+	}
+	.slick-thumb-next, 
+	.slick-thumb-prev {
+	    text-align: center;
+	    cursor: pointer;
+	    position: absolute;
+	    transform: rotate(-90deg);
+	    top: 20px;
+	}
+	.slick-thumb-prev{
+		left: 0;
+		opacity: 1;
+		visibility: visible;
+	}
+	.slick-thumb-next{
+	    right: 0;
+	}
+	.testi-thumb-slide-box{
+		margin-top: 20px
+	}
+	.testi-box{
+		margin-bottom: 30px
+	}
 }
 
 @media (max-width: 767.98px) {
@@ -279,6 +311,9 @@
     .download-app-info {
         padding: 40px 0;
     }
+    .download-img {
+        max-width: 180px;
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -303,6 +338,12 @@
     .app-btn li:not(:last-child) a {
         margin-right: 10px;
     }
+    .testi-user-img{
+		width: 150px;
+	    height: 150px;
+	    max-width: 150px;
+	    max-height: 150px;
+	}
 }
 
 
