@@ -877,6 +877,9 @@ select{
     .pb50{
         padding-bottom: 40px;
     }
+    .section-title {
+        margin-bottom: 30px;
+    }
 }
 
 
@@ -886,5 +889,11 @@ select{
     }
     .card-number-img img {
         max-width: 100px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 26px;
     }
 }

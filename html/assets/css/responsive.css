@@ -67,6 +67,9 @@
     .page-ath-content {
         width: 45%;
     }
+    .col-heading {
+        display: none !important;
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -208,6 +211,17 @@
     .page-ath-content {
         width: 50%;
     }
+    .how-work-img {
+        max-width: 120px;
+        height: 120px;
+        padding: 12px;
+    }
+    .download-app-srceen{
+        right: 20px;
+    }
+    .app-btn li a img{
+        height: 50px;
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -235,6 +249,35 @@
     }
     .footer-title{
         margin-bottom: 20px;
+    }
+    .app-srceen-part{
+        padding-bottom: 70%;
+        max-width: 65%;
+        margin: 0 auto 25px;
+    }
+    .app-srceen-info{
+        text-align: center;
+    }
+    .stories-srceen-app {
+        margin-bottom: 25px;
+    }
+    .stories-srceen-app {
+        max-width: 400px;
+    }
+    .download-app-row{
+        margin: 50px 0px 00px;
+    }
+    .download-app-srceen{
+        position: static;
+        top: auto;
+        text-align: center;
+        margin-top: -100px;
+    }
+    .download-app-srceen img {
+        max-width: 220px;
+    }
+    .download-app-info {
+        padding: 40px 0;
     }
 }
 
@@ -270,9 +313,23 @@
 	.page-ath-form{
         padding: 30px 20px;
     }
+    .app-srceen-part {
+        padding-bottom: 80%;
+        max-width: 75%;
+    }
 }
 
 
 @media (max-width: 349.98px) {
-	
+    .home-banner-content{
+        margin: 0 auto 30px;
+    }
+	.home-banner-content h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .home-banner-content p {
+        font-size: 14px;
+        margin: 0 auto 20px;
+    }
 }
