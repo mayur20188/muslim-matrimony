@@ -86,10 +86,10 @@ dir {
 section{
     position: relative;
 }
-::-webkit-input-placeholder {color: #afafaf;}
-:-moz-placeholder {color: #afafaf;}
-::-moz-placeholder {color: #afafaf;}
-:-ms-input-placeholder {color: #afafaf;}
+::-webkit-input-placeholder {color: #aaaaaa;}
+:-moz-placeholder {color: #aaaaaa;}
+::-moz-placeholder {color: #aaaaaa;}
+:-ms-input-placeholder {color: #aaaaaa;}
 
 a, button{
     transition: 0.5s;
@@ -453,7 +453,7 @@ select{
     
 }
 .section-title > p{
-
+    
 }
 
 .section-ptb40{

@@ -34,11 +34,11 @@ $(document).ready(function() {
 
 	$(window).on('load', function() {
 		var headerheight = $('.header-wrapper').outerHeight();
-		$('.content-area-container').css({"padding-top": headerheight+'px'});
+		$('.bg-banner').css({"padding-top": headerheight+'px'});
 	});
 	$(window).on('resize', function() {
 		var headerheight = $('.header-wrapper').outerHeight();
-		$('.content-area-container').css({"padding-top": headerheight+'px'});
+		$('.bg-banner').css({"padding-top": headerheight+'px'});
 	});
 
 	$('#testimonial-slider').slick({
