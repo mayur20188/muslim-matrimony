@@ -928,8 +928,27 @@
     margin-top: -150px;
 }
 
+.about-left-info h2{
+    margin-bottom: 30px;
+}
+.about-left-info h4{
+    font-family: 'Graphit-Regular';
+    color: #B0B3B8;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
 
-
+.about-right-img{
+    position: relative;
+    padding-right: 15px;
+}
+.shape-img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
 
 
 
