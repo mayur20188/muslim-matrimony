@@ -978,6 +978,15 @@
     height: 100%;
     background-color: rgba(29, 27, 27, 0.5);
 }
+.stories-col h4{
+    font-size: 22px;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    right:0;
+    bottom: 10px;
+    text-align: center;
+}
 
 
 
