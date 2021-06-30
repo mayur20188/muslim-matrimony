@@ -220,7 +220,7 @@
         right: 20px;
     }
     .app-btn li a img{
-        height: 50px;
+        height: 40px;
     }
     .testi-flex-slider{
 		flex-direction: column;
@@ -347,6 +347,18 @@
 	    max-width: 150px;
 	    max-height: 150px;
 	}
+    .download-app{
+        padding: 0;
+    }
+    .download-app::before, .download-app::after{
+        display: none;
+    }
+    .logo-app-icon {
+        max-width: 60px;
+    }
+    .about-features{
+        text-align: center;
+    }
 }
 
 

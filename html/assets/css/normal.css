@@ -262,6 +262,7 @@ select{
     transition: 0.4s;
     text-align: center;
     text-transform: capitalize;
+    border: 1px solid transparent;
     position: relative;
     overflow: hidden;
     min-width: 115px;
@@ -272,7 +273,9 @@ select{
     color: #fff;
 }
 .btn-default.btn-theme:hover{
-    color: #fff;
+    background-color: transparent;
+    border-color: #FF3761;
+    color: #FF3761;
 }
 
 .bg-theme{
@@ -910,5 +913,8 @@ img.vert-move {
     }
     h3 {
         font-size: 26px;
+    }
+    h4 {
+        font-size: 22px;
     }
 }
