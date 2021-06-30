@@ -281,7 +281,9 @@ select{
 .bg-gray{
     background: #F7F9FC;
 }
-
+.bg-light-pink{
+    background: #FFFBFC;
+}
 
 .btn-default .fa-long-arrow-alt-right{
     position: relative;
@@ -849,10 +851,6 @@ select{
     top: 11px;
 }
 
-img.vert-move {
-    -webkit-animation: mover 1s infinite  alternate;
-    animation: mover 1s infinite  alternate;
-}
 img.vert-move {
     -webkit-animation: mover 1s infinite  alternate;
     animation: mover 1s infinite  alternate;
