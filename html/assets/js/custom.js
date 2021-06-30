@@ -214,3 +214,21 @@ function isMobile() {//for detect mobile browser
 	   isIOS = (/iphone|ipad|ipod/gi).test(appsVersion);
    return (isAndroid || isIOS || /(Opera Mini)|Kindle|webOS|BlackBerry|(Opera Mobi)|(Windows Phone)|IEMobile/i.test(navigator.userAgent));
 }
+
+
+
+
+
+// ------------help-page-javascript----------
+$(".help-more-btn").click(function(){
+	if($(this).hasClass("active")){
+		$(this).removeClass("active");
+		$(this).find('span').html("View all topics");
+		$(this).find('i').attr("class", "fa fa-chevron-down ml-2");
+	}else{
+		$(this).addClass("active");
+		$(this).find('span').html("View less topics");
+		$(this).find('i').attr("class", "fa fa-chevron-up ml-2");
+	}
+	$(this).parents('.help-box').find('.help-list-qst').find('.col-lg-6').toggleClass('col-lg-12');
+});

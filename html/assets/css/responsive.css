@@ -254,6 +254,16 @@
 	.testi-box{
 		margin-bottom: 30px
 	}
+    .help-image{
+        text-align: left;
+        margin-bottom: 20px
+    }
+    .help-qst-box{
+        text-align: center;
+    }
+    .help-box{
+        padding: 1.5rem 10px;
+    }
 }
 
 @media (max-width: 767.98px) {
