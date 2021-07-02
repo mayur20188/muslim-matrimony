@@ -264,6 +264,9 @@
     .help-box{
         padding: 1.5rem 10px;
     }
+    .blog-content {
+        margin-bottom: 30px;
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -327,6 +330,37 @@
     .contact-part{
         padding: 35px 25px;
     }
+    .blog-navbar-icon {
+        width: 80px;
+        height: 80px;
+    }
+    .blog-navbar-icon img {
+        height: 35px;
+    }
+    .blog-category h4 {
+        font-size: 22px;
+    }
+    .blog-tag-icon a {
+        width: 30px;
+        height: 30px;
+        line-height: 26px;
+    }
+    .blog-tag-icon a svg{
+        width: 20px;
+    }
+    .blog-detail-title {
+        display: block;
+    }
+    .blog-detail-date span{
+        display: inline-block;
+        line-height: 1.2;
+        padding: 5px 10px;
+    }
+    .blog-detail-title h3{
+        font-size: 26px;
+        padding-right: 0;
+        margin-bottom: 15px;
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -369,6 +403,53 @@
     .about-features{
         text-align: center;
     }
+    .blog-navbar-icon {
+        width: 60px;
+        height: 60px;
+    }
+    .blog-navbar-icon img {
+        height: 28px;
+    }
+    .blog-category h4 {
+        font-size: 18px;
+    }
+    .blog-category-heading {
+        text-align: center;
+    }
+    .blog-category-left {
+        margin: 0 auto 20px;
+    }
+    .blog-slider-content{
+        margin-left: 0;
+        padding: 0 20px;
+        padding-left: 25px;
+    }
+    .blog-tag{
+        left: 25px;
+    }
+    .blog-tag-icon{
+        left: 25px;
+    }
+    .blog-category-left {
+        min-width: 80px;
+        min-height: 80px;
+        max-width: 80px;
+        max-height: 80px;
+    }
+    .blog-category-left img {
+        height: 32px;
+    }
+    .blog-content .blog-slider-content{
+        padding: 0;
+    margin-left: 0;
+    }
+    .blog-content .blog-slider-content::before{
+        display: none;
+    }
+    .blog-content .blog-tag-icon {
+        left: 15px;
+        bottom: 15px;
+    }
 }
 
 
@@ -382,6 +463,15 @@
     .app-srceen-part {
         padding-bottom: 80%;
         max-width: 75%;
+    }
+    .blog-tag .btn-default {
+        padding: 4px 12px;
+        font-size: 14px;
+    }
+    .blog-date {
+        top: 10px;
+        right: 10px;
+        padding: 7px;
     }
 }
 
@@ -397,5 +487,8 @@
     .home-banner-content p {
         font-size: 14px;
         margin: 0 auto 20px;
+    }
+    .blog-category h4 {
+        font-size: 16px;
     }
 }

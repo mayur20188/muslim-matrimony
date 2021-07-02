@@ -55,6 +55,7 @@ a:focus {
     text-decoration: none;
     transition: 0.5s;
     outline: none;
+    color: #FF3761;
 }
 button, input, optgroup, select, textarea{
     font-size: 14px;
@@ -276,6 +277,12 @@ select{
     background-color: transparent;
     border-color: #FF3761;
     color: #FF3761;
+}
+
+.btn-default.btn-theme.btn-bgwithout-white:hover{
+    background-color: #FF3761;
+    border-color: transparent;
+    color: #fff;
 }
 
 .bg-theme{
@@ -852,6 +859,26 @@ select{
     position: absolute;
     right: 22px;
     top: 11px;
+}
+
+.line-clamp-display{
+    display: box;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.line-clamp-1{
+    -webkit-line-clamp: 1;
+}
+.line-clamp-2{
+    -webkit-line-clamp: 2;
+}
+.line-clamp-3{
+    -webkit-line-clamp: 3;
+}
+.line-clamp-4{
+    -webkit-line-clamp: 4;
 }
 
 img.vert-move {
