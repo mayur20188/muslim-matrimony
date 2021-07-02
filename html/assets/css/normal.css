@@ -192,18 +192,6 @@ h6{
 }   
 .p-text-small{  
     font-size: 12px !important; 
-}   
-.link-text-16{  
-    font-size: 16px !important; 
-    color: #006AFA; 
-}   
-.link-text-14{  
-    font-size: 14px !important; 
-    color: #006AFA; 
-}   
-.link-text-13{  
-    font-size: 13px !important; 
-    color: #006AFA; 
 }
 .form-group {
     margin-bottom: 20px;
@@ -321,8 +309,8 @@ select{
 .text-gray-color{
     color: #727272;
 }
-.text-green-color{
-    color: #00AE86;
+.text-pink-color{
+    color: #FF3761;
 }
 .alert{
     padding: 15px 12px;
@@ -461,11 +449,13 @@ select{
 .section-title{
     margin-bottom: 50px;
 }
-.section-title h3{
-    
+.section-title h2{
+    margin-bottom: 15px;
 }
 .section-title > p{
-    
+    max-width: 370px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .section-ptb40{
