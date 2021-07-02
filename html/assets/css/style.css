@@ -1334,9 +1334,18 @@ code{
 .blog-thumbnail{
     position: relative;
 }
+.blog-thumbnail a {
+    overflow: hidden;
+    display: block;
+    border-radius: 10px;
+}
 .blog-thumbnail img{
     border-radius: 10px;
     width: 100%;
+    transition: 0.4s;
+}
+.blog-slide:hover img {
+    transform: scale(1.3) rotate( -5deg);
 }
 .blog-slider-content{
     position: relative;
