@@ -1675,41 +1675,41 @@ code{
     right: 0;
     background-color: #FF3761;
 }
-.testi-box{
+.testi-data-box{
     background: #FFFFFF;
     box-shadow: 5px 5px 30px rgba(255, 55, 97, 0.2);
     border-radius: 10px;
     padding: 25px;
     margin: 30px;
 }
-.testi-user{
+.testi-data-user{
     display: flex;
     align-items: center;
     margin-bottom: 15px;
 }
-.testi-text h6 {
+.testi-data-text h6 {
     margin-bottom: 5px;
     font-family: 'Graphit-Regular';
     font-size: 16px;
     color: #3C393A;
 }
-.testi-star i{
+.testi-data-star i{
     font-size: 13px;
 }
-.testi-star i.active {
+.testi-data-star i.active {
     color: #F5D66E;
 }
-.testi-box p {
+.testi-data-box p {
     font-family: 'Lobster Two', cursive;
     color: #3C393A;
     margin-bottom: 0;
     font-weight: 800;
     font-size: 17px;
 }
-.testi-img{
+.testi-data-img{
     margin-right: 15px;
 }
-.testi-img img{
+.testi-data-img img{
     width: 70px;
     height: 70px;
     border-radius: 50%;
