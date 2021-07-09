@@ -526,6 +526,7 @@
 }
 .page-banner-content p{
     color: #fff;
+    max-width: 550px;
     margin: 0 auto 0px;
 }
 .app-btn li a{
