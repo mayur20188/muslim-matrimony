@@ -73,8 +73,15 @@
 }
 
 @media (max-width: 991.98px) {
-    .account-right {
+    .lang-dropdown{
+        margin-right: 0;
         margin-left: auto;
+    }
+    .header-sticky .lang-dropdown .dropdown-toggle span {
+        color: #3C393A;
+    }
+    .header-sticky .lang-dropdown .dropdown-toggle::after {
+        color: #3C393A;
     }
     .menu-part {
         position: fixed;
@@ -370,6 +377,12 @@
 }
 
 @media (max-width: 575.98px) {
+    .lang-dropdown .dropdown-toggle{
+        padding-right: 2px;
+    }
+    .lang-dropdown .dropdown-toggle::after{
+        display: none;
+    }
     .user-header-name,
     .user-dropdown-arrow{
         display: none;
@@ -471,8 +484,12 @@
 
 
 @media (max-width: 479.98px) {
+    .toggle-btn{
+        height: 45px;
+        margin-left: 10px;
+    }
     .logo-part {
-        max-width: 180px;
+        max-width: 160px;
     }
 	.page-ath-form{
         padding: 30px 20px;
@@ -497,6 +514,17 @@
 
 
 @media (max-width: 349.98px) {
+    .lang-dropdown .dropdown-toggle span{
+        display: none;
+    }
+    .lang-dropdown .dropdown-toggle img{
+        width: 20px;
+        height: 20px;
+        margin-right: 0;
+    }
+    .account-right li{
+        margin-left: 5px;
+    }
     .home-banner-content{
         margin: 0 auto 30px;
     }

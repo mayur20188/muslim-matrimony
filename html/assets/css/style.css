@@ -12,9 +12,6 @@
 @import url('normal.css');
 
 /*----------drodpown----------*/
-.dropdown-toggle::after{
-    display: none;
-}
 .dropdown-menu {
     display: block;
     opacity: 0;
@@ -113,6 +110,9 @@
     position: relative;
     margin-left: 10px;
 }
+.header-btn{
+    display: block;
+}
 .header-sticky .header-btn{
     color: #fff;
 }
@@ -161,19 +161,23 @@
 
 .lang-dropdown{
     margin:0 10px;
-  }
-  .lang-dropdown .dropdown-toggle {
-      display: block;
+}
+.lang-dropdown .dropdown-toggle {
+    display: block;
     padding: 0;
-  }
-  .lang-dropdown .dropdown-toggle img {
-    width: 25px;
-    height: 25px;
+    padding-right: 15px;
+}
+.header-sticky .lang-dropdown .dropdown-toggle{
+    color: #C1C1C2;
+}
+.lang-dropdown .dropdown-toggle img {
+    width: 22px;
+    height: 22px;
     border-radius: 50%;
     margin-right: 5px;
     display: inline-block;
-  }
-  .lang-dropdown .dropdown-toggle span {
+    }
+.lang-dropdown .dropdown-toggle span {
     text-transform: uppercase;
     font-size: 13px;
     display: inline-block;
@@ -181,40 +185,49 @@
     color: #fff;
     vertical-align: middle;
 }
-  .lang-dropdown .dropdown-menu{
+.header-sticky .lang-dropdown .dropdown-toggle span {
+    color: #C1C1C2;
+    opacity: 1;
+}
+.lang-dropdown .dropdown-menu{
     transform: translateY(30px) !important;
-  }
-  .lang-dropdown .dropdown-menu {
+}
+.lang-dropdown .dropdown-menu {
     min-width: 160px;
     left: auto !important;
     right: 0;
     padding: 0;
     border: none;
-  }
-  .lang-dropdown .dropdown-toggle::after{
-    /* display: none; */
-  }
-  .lang-dropdown .dropdown-menu.show {
+}
+.lang-dropdown .dropdown-toggle::after{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    color: #fff;
+}
+.header-sticky .lang-dropdown .dropdown-toggle::after{
+    color: #C1C1C2;
+}
+.lang-dropdown .dropdown-menu.show {
     transform: translateY(30px) !important;
-  }
-  .lang-dropdown .dropdown-item {
+}
+.lang-dropdown .dropdown-item {
     padding: 6px 12px;
-  }
-  .lang-dropdown .dropdown-item:focus{
+}
+.lang-dropdown .dropdown-item:focus{
     background-color: #191f33;
-  }
-  .lang-dropdown .dropdown-item:hover {
+}
+.lang-dropdown .dropdown-item:hover {
     color: #fff;
     background-color: #FF3761;
     padding-left: 22px;
-  }
-  .dropdown-item img.img-flag {
+}
+.dropdown-item img.img-flag {
     margin-right: 5px;
     width: 20px;
     height: 20px;
     border-radius: 50%;
-  }
-
+}
 
 .header-user-dropdown {
     display: flex;
