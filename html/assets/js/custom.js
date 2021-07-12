@@ -130,7 +130,7 @@ $(document).ready(function() {
 			}
 		})
 	};
-
+	storiesSwiperslider();
 	blogSwiperslider();
 
 	if($('[data-scroll]').length){
@@ -164,7 +164,32 @@ function headerStuck(){
 		}
 	});
 }
-
+function storiesSwiperslider(){
+	new Swiper('.stories-slider', {
+		slidesPerView: 3,
+		spaceBetween: 15,
+		loop:true,
+		autoplay:true,
+		navigation: {
+			prevEl: '.lsswiper-button-prev',
+			nextEl: '.lsswiper-button-next',
+		},
+		breakpoints: {
+			0:{
+				slidesPerView: 1,
+			},
+			576:{
+				slidesPerView: 1,
+			},
+			768: {
+				slidesPerView: 2,
+			},
+			992: {
+				slidesPerView: 3,
+			}
+		}
+	});
+}
 function blogSwiperslider(){
 	var blogsliderswiper = new Swiper('.blog-slider', {
 		slidesPerView: 3,
