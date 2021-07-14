@@ -320,10 +320,6 @@ function googleTranslateElementInit() {
 }
 
 
-
-
-
-
 $(document).ready(function () {
 
 	function setCookie(cname, cvalue, exdays = 999) {
