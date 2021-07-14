@@ -227,6 +227,10 @@
     background-color: #FF3761;
     padding-left: 22px;
 }
+.lang-dropdown .dropdown-item.active{
+    color: #fff;
+    background-color: #FF3761;
+}
 .dropdown-item img.img-flag {
     margin-right: 5px;
     width: 20px;

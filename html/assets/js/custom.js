@@ -320,10 +320,32 @@ function googleTranslateElementInit() {
 }
 
 
-jQuery('.lang-select').click(function() {
-	var theLang = jQuery(this).attr('data-lang');
-	jQuery('.goog-te-combo').val(theLang);
 
-	window.location = jQuery(this).attr('href');
-	location.reload();
+function getCookie(cName) {
+	const value = `; ${document.cookie}`;
+	const parts = value.split(`; ${cName}=`);
+	if (parts.length === 2) return parts.pop().split(';').shift();
+}
+
+
+$(document).ready(function() {
+	
+	$('.lang-select').click(function() {
+		var theLang = $(this).attr('data-lang');
+		$('.goog-te-combo').val(theLang);
+		window.location = $(this).attr('href');
+		location.reload();
+	});
+	const value = `; ${document.cookie}`;
+	const parts = value.split(`; googtrans=`);
+	const gotrans = parts.pop();
+	console.log(gotrans)
+	$('.dropdown-menu a').each(function(index, ele){
+		// var langcode = $(this).attr('data-code');
+		$(this).removeClass('active')
+		$('a[data-code="'+gotrans+'"]').addClass('active');
+		var selelangflag = $('a[data-code="'+gotrans+'"]').find('img').attr('src');
+		var selelangname = $('a[data-code="'+gotrans+'"]').find('span').attr('data-langname');
+		console.log("Flag: "+selelangflag, '---', "lang Name: "+selelangname)
+	});
 });
