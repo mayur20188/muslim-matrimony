@@ -318,7 +318,6 @@ function googleTranslateElementInit() {
 		'google_translate_element'
 	  );
 }
-  // setcookie('googtrans', '/en/en');
 
 
 jQuery('.lang-select').click(function() {
@@ -327,5 +326,4 @@ jQuery('.lang-select').click(function() {
 
 	window.location = jQuery(this).attr('href');
 	location.reload();
-	// setCookie("googtrans", theLang, 'http://localhost:81/work/muslim-matrimony/git/html/');
 });
