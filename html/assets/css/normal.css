@@ -44,6 +44,7 @@ body {
     color: #B0B3B8;
     font-weight: normal;
     background-color: #FFFEFB;
+    top: 0 !important;
 }
 *{
     outline: none;
