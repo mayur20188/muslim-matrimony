@@ -330,15 +330,14 @@ $(document).ready(function () {
 	}
 
 	$(document).on("click", ".lang-select", function () {
-		var code = $(this).data('code');
+		// var code = $(this).data('code');
 		var lang = $(this).data('lang');
 		setCookie("googtrans", "/en/" + lang);
+		// console.log(setCookie("googtrans", "/en/" + lang))
 		var theLang = $(this).attr('data-lang');
 		$('.goog-te-combo').val(theLang);
-		// debugger;
 		window.location = $(this).attr('href');
 		location.reload();
-
 	});
 
 	const value = `; ${document.cookie}`;
