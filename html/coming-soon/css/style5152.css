@@ -393,7 +393,7 @@ textarea:focus {
 @media screen and (max-width: 1366px) {
   .grid-sizer,
   .brick { 
-    width: 20%; 
+    width: 33%; 
   }
 }
 
