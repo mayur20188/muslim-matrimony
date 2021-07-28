@@ -1,0 +1,27 @@
+body {
+	background: #fff;
+}
+
+.le_preloader {
+  background: url(../images/ripple.svg) no-repeat center #fefefe;
+}
+
+.le_home_page,
+#contact,
+.le_porfolio_close {
+	background: rgba(255, 255, 255, 0.95) !important;
+}
+
+#le_newsletter_form .input-field input {
+    color: #111 !important;
+}
+
+#le_newsletter_form button, 
+#le_newsletter_form a {
+	color: #fff;
+}
+
+#le_newsletter_form button:hover {
+    color: #B29231;
+    background: #fff !important;
+}
