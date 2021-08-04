@@ -1897,6 +1897,7 @@ code{
     height: 100%;
 }
 .file-upload-name{
+    color: #495057 !important;
     display: block;
     text-overflow: ellipsis;
     white-space: nowrap;
