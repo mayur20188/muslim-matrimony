@@ -143,6 +143,18 @@ $(document).ready(function () {
 			}, 1000);
 		});
 	}
+	$(".file-upload-input").on('change',function(e) {
+		var filename = e.target.files[0].name;
+		$(this).parent().find('.file-upload-name').html(filename);
+	});
+
+	$(window).on('load', function(){
+		if (location.hash){
+			var offsetTop = $(window.location.hash).offset().top - $('header').height();
+			$('html, body').animate({ scrollTop: offsetTop}, 100);
+			history.pushState("", document.title, window.location.pathname)
+		}
+	});
 });
 
 function headerStuck() {
